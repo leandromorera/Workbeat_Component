@@ -33,10 +33,12 @@ namespace K2_Betterware_Workbeat_Assistance.Api.Controllers
             var emp_resp = _repository.get_employed(emp);
             var emp_resp_empl = _repository.get_empleado(emp);
 
+
             /////// metodo de acceso a la persona en particuar
             string emp1 = "/v3/asi/personas/";
             string npt = "1201651";
             var emp_resp_per = _repository.get_persona(emp1, npt);
+
 
             string p_id = "8251";
             string fechahora = "2019-11-05T09:04:08";
