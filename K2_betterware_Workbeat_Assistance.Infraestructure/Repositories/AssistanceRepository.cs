@@ -12,25 +12,7 @@ namespace K2_Betterware_Workbeat_Assistance.Infraestructure.Repositories
     public class AssistanceRepository : IRepository
     {
 
-        public async Task<IEnumerable<Assistance>> GetAssistance()
-        {
-
-            var assistance = Enumerable.Range(1, 10).Select(x => new Assistance
-            {
-                Hour = x
-            }
-            );
-
-            await Task.Delay(10);
-            return assistance;
-        }
-
-
-        public async Task<Boolean> AssistanceRegister(Assistance assistance)
-        {
-            await Task.Delay(10);
-            return true;
-        }
+        
 
 
         public string getToken()
@@ -80,56 +62,7 @@ namespace K2_Betterware_Workbeat_Assistance.Infraestructure.Repositories
             return strResponse;
         }
 
-        //////////////////////// metodos biostar ///////////////////////////////
-        /*public string Token_bio()
-        {
-            AssistanceService assistanceService = new AssistanceService();
-            String strResponse = assistanceService.token_bio(); // servicio y parametro persona
-            return strResponse;
-        }
-
-        public string User_bio()
-        {
-            AssistanceService assistanceService = new AssistanceService();
-            String strResponse = assistanceService.user_bio(); // servicio y parametro persona
-            return strResponse;
-        }
-
-        public string Event_search_bio()
-        {
-            AssistanceService assistanceService = new AssistanceService();
-            String strResponse = assistanceService.event_search_bio(); // servicio y parametro persona
-            return strResponse;
-        }
-
-        public string Device_bio()
-        {
-            AssistanceService assistanceService = new AssistanceService();
-            String strResponse = assistanceService.device_bio(); // servicio y parametro persona
-            return strResponse;
-        }
-
-
-        public string Checando_tok(string id, string fechora, string disid, string direccion, string tk_beat)
-        {
-            AssistanceService assistanceService = new AssistanceService();
-            String strResponse = assistanceService.Checando_tok(id, fechora, disid, direccion, tk_beat); // servicio y parametro persona
-            return strResponse;
-        }
-
-        public string[] bio_event_search(string tk_bio)
-        {
-            AssistanceService assistanceService = new AssistanceService();
-            String[] strResponse = assistanceService.bio_event_search(tk_bio); // servicio y parametro persona
-            return strResponse;
-        }
-
-        public string[] registrando_bio_beat()
-        {
-            AssistanceService assistanceService = new AssistanceService();
-            String[] strResponse = assistanceService.registrando_bio_beat(); // servicio y parametro persona
-            return strResponse;
-        }*/
+        
 
 
     }

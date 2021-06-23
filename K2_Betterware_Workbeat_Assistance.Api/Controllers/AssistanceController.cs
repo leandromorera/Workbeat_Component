@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-
 using K2_Betterware_Workbeat_Assistance.Core.Interfaces;
 using K2_Betterware_Workbeat_Assistance.Infraestructure.Repositories;
 
@@ -46,29 +44,10 @@ namespace K2_Betterware_Workbeat_Assistance.Api.Controllers
             string posi = "[E|1|N]";
             var response_check = _repository.checando(p_id, fechahora, dispositivoId, posi);
 
-
-            /////////////////////////////// metodos Biostar
-            /*var tk_bio = _repository.Token_bio();
-            var Usr_bio = _repository.User_bio();
-            var Ev_bio = _repository.Event_search_bio();
-            var Dev_bio = _repository.Device_bio();
-
-
-            var orchesting = _repository.registrando_bio_beat();*/
-
-
-
             return Ok(assistance + "WWWWWWWWWWWWWWWWWWWW_" + emp_resp_empl + "WWWWWWWWWWWWWWWWWWWWW_" + emp_resp_per + "WWWWWWWWWWWWWWWWWWWW_" + response_check);
             //+"BBBBBBBBBBBBBBBBBBB_"+ tk_bio + "BBBBBBBBBBBBBBBB_"+ Usr_bio + "BBBBBBBBBBBBBBB_"+ Ev_bio + "BBBBBBBBBBBBBBBBBBB_"+ Dev_bio);
             //return Ok(orchesting);
         }
-
-
-
-
-
-
-
 
     }
 }
